@@ -1,0 +1,70 @@
+.carro * {
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .carro {
+    display: block;
+    width: 250px !important;
+    height: auto;
+  }
+  .carro thead {
+    display: none;
+  }
+  .carro > *,
+  .carro tr,
+  .carro td {
+    display: block;
+  }
+
+  .carro tbody tr td {
+    padding-left: 20% !important;
+    margin-bottom: -10px;
+  }
+  .carro tbody tr td :last-child {
+    margin-bottom: 0;
+  }
+  .carro tbdoy tr td ::before {
+    color: #999;
+    font-weight: unset;
+    position: absolute;
+  }
+  .carro tbody tr {
+    font-size: 1rem;
+  }
+  .carro tbody tr td:nth-child(1)::before {
+    content: "Código:    ";
+    font-weight: bold;
+    color: #102027;
+  }
+  .carro tbody tr td:nth-child(2)::before {
+    content: "Producto:    ";
+    font-weight: bold;
+    color: #102027;
+  }
+  .carro tbody tr td:nth-child(3)::before {
+    content: "Peso:    ";
+    font-weight: bold;
+    color: #102027;
+  }
+  .carro tbody tr td:nth-child(4)::before {
+    content: "Información:    ";
+    font-weight: bold;
+    color: #102027;
+  }
+  .carro tbody tr td:nth-child(5)::before {
+    content: "Precio:    ";
+    font-weight: bold;
+    color: #102027;
+  }
+}
+.imagen-carrito {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.counter {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+}
